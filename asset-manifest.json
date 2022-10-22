@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/comic_portfolio/static/css/main.c96393af.css",
+    "main.js": "/comic_portfolio/static/js/main.bd230417.js",
+    "static/media/introBg.png": "/comic_portfolio/static/media/introBg.372870f18888522d4a44.png",
+    "static/media/Dots.png": "/comic_portfolio/static/media/Dots.6a41c4613b767ae323f3.png",
+    "static/media/Gears.png": "/comic_portfolio/static/media/Gears.d629c26ca5db88ec6a84.png",
+    "static/media/ProjectsBoom.png": "/comic_portfolio/static/media/ProjectsBoom.7c4fa2661eac48b2478a.png",
+    "static/media/Ban Text.png": "/comic_portfolio/static/media/Ban Text.fc374de2eecdbe988442.png",
+    "static/media/Contact Me.png": "/comic_portfolio/static/media/Contact Me.5b7e7f06b5019d00bda5.png",
+    "static/media/ProjectsText.png": "/comic_portfolio/static/media/ProjectsText.0bfe448f31b417dd3289.png",
+    "static/media/About.png": "/comic_portfolio/static/media/About.e0b5654b22fa4cab909b.png",
+    "static/media/Ban Boom.png": "/comic_portfolio/static/media/Ban Boom.1ff296f0e9e33708fe5c.png",
+    "static/media/Full Stack Dev.svg": "/comic_portfolio/static/media/Full Stack Dev.8bf7c5c83d4e0a22de7b44a16a9d6264.svg",
+    "static/media/Plane.svg": "/comic_portfolio/static/media/Plane.8ce4fac0b8733b0a10903f9dc20cbb40.svg",
+    "static/media/Bird.svg": "/comic_portfolio/static/media/Bird.965af1558580cd0f126ae6470eb1b8ea.svg",
+    "static/media/punyTic.png": "/comic_portfolio/static/media/punyTic.17fa878ba767edca653f.png",
+    "static/media/DissectPad.png": "/comic_portfolio/static/media/DissectPad.c7ca00b579ea40acc27b.png",
+    "static/media/Stars.png": "/comic_portfolio/static/media/Stars.ea6de4226b05d50d1a3e.png",
+    "static/media/punyCalc.png": "/comic_portfolio/static/media/punyCalc.37cf9fc8a0f0a299eac9.png",
+    "index.html": "/comic_portfolio/index.html",
+    "static/media/Left_pointy.svg": "/comic_portfolio/static/media/Left_pointy.ee49d2415ecc4ea4e1fe3e26bf373c6c.svg",
+    "static/media/Right_pointy.svg": "/comic_portfolio/static/media/Right_pointy.e34e569b5d29ac9a42d6c4caf34a12d5.svg",
+    "main.c96393af.css.map": "/comic_portfolio/static/css/main.c96393af.css.map",
+    "main.bd230417.js.map": "/comic_portfolio/static/js/main.bd230417.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c96393af.css",
+    "static/js/main.bd230417.js"
+  ]
+}
