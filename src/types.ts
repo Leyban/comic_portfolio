@@ -1,0 +1,1 @@
+export type ProjectModalType = 'sideQuest' | null

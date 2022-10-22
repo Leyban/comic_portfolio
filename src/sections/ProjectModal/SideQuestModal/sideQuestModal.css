@@ -1,0 +1,19 @@
+.projectModal .sideQuestModal{
+    margin: 20px;
+}
+.projectModal .sideQuestModal .title{
+    margin: 10px;
+    border: 5px solid black;
+    background-color: #9FE4D4;
+}
+.projectModal .sideQuestModal .stack{
+    margin: 10px;
+    border: 5px solid black;
+    background-color: #D6F5F1;
+}
+.projectModal .sideQuestModal .features{
+    margin: 10px;
+    height: 1000px;
+    border: 5px solid black;
+    background-color: #9FE4D4;
+}

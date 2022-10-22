@@ -1,0 +1,203 @@
+#about{
+    padding: 20px;
+    max-width: 1700px;
+    margin: auto;
+    position: relative;
+}
+#about .aboutTitle{
+    position: absolute;
+    scale: 0.7;
+    top: -80px;
+    left: -105px;
+}
+#about .aboutPanel{
+    border: 5px solid black;
+    position: relative;
+    width: 1400px;
+    height: 500px;
+    overflow: hidden;
+    background-image:radial-gradient(circle, #B0C1FC, #2D5BFF 70%, #2D5BFF);
+    background-color: #2D5BFF;
+    font-size: 20px;
+}
+#about .aboutPanel .gears{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: 2500px;
+    opacity: 0.4;
+}
+#about .aboutPanel .dots{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#about .aboutPanel .longText{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    width: 250px;
+}
+#about .aboutPanel .challenge{
+    position: absolute;
+    top: 25%;
+    left: 55%;
+    width: 250px;
+}
+#about .aboutPanel .learning{
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    width: 250px;
+}
+#about .aboutPanel .ideas{
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    width: 250px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1460px) {
+    #about .aboutPanel{
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #about .aboutPanel{
+        font-size: 16px;
+        height: 400px;
+    }
+    #about .aboutTitle{
+        scale: 0.55;
+        top: -100px;
+        left: -135px;
+    }
+    #about .aboutPanel .longText{
+        top: 40%;
+        left: 10%;
+        width: 230px;
+    }
+    #about .aboutPanel .challenge{
+        top: 22%;
+        left: 55%;
+        width: 230px;
+    }
+    #about .aboutPanel .learning{
+        top: 45%;
+        left: 60%;
+        width: 230px;
+    }
+    #about .aboutPanel .ideas{
+        top: 68%;
+        left: 65%;
+        width: 230px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #about .aboutPanel .gears{
+        width: 2000px;
+    }
+}
+@media screen and (max-width: 770px) {
+    #about .aboutPanel p.comicNeue{
+        padding: 15px !important;
+    }
+    #about .aboutTitle{
+        scale: 0.55;
+        top: -100px;
+        left: -135px;
+    }
+    #about .aboutPanel .longText{
+        top: 40%;
+        left: 10%;
+        width: 200px;
+    }
+    #about .aboutPanel .challenge{
+        top: 22%;
+        left: auto;
+        right: 15px;
+        width: 200px;
+    }
+    #about .aboutPanel .learning{
+        top: 45%;
+        left: auto;
+        right: 15px;
+        width: 180px;
+    }
+    #about .aboutPanel .ideas{
+        top: 68%;
+        left: auto;
+        right: 15px;
+        width: 200px;
+    }
+}
+@media screen and (max-width: 720px) {
+    #about{
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    #about .aboutPanel{
+        height: 350px;
+    }
+    #about .aboutTitle{
+        scale: 0.51;
+        top: -100px;
+        left: -147px;
+    }
+    #about .aboutPanel .longText{
+        top: 40%;
+        left: 15px;
+        width: 200px;
+    }
+}
+
+
+
+/* Animation */
+@keyframes opacity0 {
+    from{opacity: 0;}
+    to{opacity: 0;}
+}
+@keyframes slideFromLeft {
+    from{
+        opacity: 0;
+        margin-left: -50px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+@keyframes slideFromRight {
+    from{
+        opacity: 0;
+        margin-left: 50px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+#about .aboutPanel.withinView .longText{
+    animation: slideFromLeft 0.5s;
+}
+#about .aboutPanel.withinView .challenge{
+    animation: opacity0 0.5s, slideFromRight 0.5s 0.5s;
+}
+#about .aboutPanel.withinView .learning{
+    animation: opacity0 1s, slideFromRight 0.5s 1s;
+}
+#about .aboutPanel.withinView .ideas{
+    animation: opacity0 1.5s, slideFromRight 0.5s 1.5s;
+}

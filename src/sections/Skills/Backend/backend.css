@@ -1,0 +1,164 @@
+.skillsContainer .backend{
+    max-width: fit-content;
+    position: relative;
+    margin-left: -10px;
+}
+.skillsContainer .backend .pointyTextBox{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-weight: 600;
+}
+.skillsContainer .backend .chipsContainer{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: 44px;
+    left: 10px;
+}
+.skillsContainer .backend .chipsContainer .chip{
+    transition: 0.3s;
+    position: relative;
+}
+.skillsContainer .backend .chipsContainer .chip img{
+    position: absolute;
+    height: 60px;
+}
+.skillsContainer .backend .chipsContainer .chip .textBox{
+    position: absolute;
+    border: 2px solid black !important;
+    opacity: 0;
+}
+.skillsContainer .backend .chipsContainer .chip .textBox .comicNeue{
+    font-size: 16px !important;
+    padding: 7px !important;
+    transform: translate(-3px, -3px) !important;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(2n-1) .textBox{
+    right: 20%;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(2n) .textBox{
+    left: 22%;
+}
+
+.skillsContainer .backend .chipsContainer .chip:nth-child(1) img{
+    right: 20px;
+    top: 15px;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(1) .textBox{
+    top: 20px;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(2){
+    margin-top: -68px;
+    margin-left: 6px;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(2) img{
+    left: 35px;
+    top: 20px;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(2) .textBox{
+    top: 35px;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(3){
+    margin-left: 19px;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(3) img{
+    right: 20px;
+    top: 17px;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(3) .textBox{
+    top: 24px;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(4){
+    margin-left: 19px;
+    margin-top: -35px;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(4) img{
+    left: 20px;
+    top: 17px;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(4) .textBox{
+    top: 24px;
+}
+
+/* Animation */
+.skillsContainer .backend .chipsContainer .chip{
+    pointer-events: none;
+}
+.skillsContainer .backend .chipsContainer .chip svg .pathShell{
+    pointer-events: auto;
+}
+
+.skillsContainer .backend .chipsContainer .chip:nth-child(1):hover svg .pathShell path{
+    fill: #BFE4B2;
+    transition: 0.6s;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(2):hover svg .pathShell path{
+    fill: #E1C1EF;
+    transition: 0.6s;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(3):hover svg .pathShell path{
+    fill: #8cd471;
+    transition: 0.6s;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(4):hover svg .pathShell path{
+    fill: #EFC3E1;
+    transition: 0.6s;
+}
+
+.skillsContainer .backend .chipsContainer .chip:hover{
+    transition: 0.3s;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(2n-1):hover{
+    transform: translate(15px);
+    transition: 0.6s;
+}
+.skillsContainer .backend .chipsContainer .chip:nth-child(2n):hover{
+    transform: translate(-15px);
+    transition: 0.6s;
+}
+
+.skillsContainer .backend .chipsContainer .chip .textBox{
+    transition: 0.3s;
+}
+.skillsContainer .backend .chipsContainer .chip:hover .textBox{
+    opacity: 1;
+    transition: 0.6s;
+}
+
+/* Swish Swoosh Effect */
+@keyframes popLeft {
+    from { 
+        transform: translate(-40px, 0);
+        opacity: 0;
+    }
+    to { 
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+}
+@keyframes popRight {
+    from { 
+        transform: translate(40px, 0px);
+        opacity: 0;
+    }
+    to { 
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+}
+
+.skillsContainer .backend.withinView .chipsContainer .chip:nth-child(1){
+    animation: popRight 0.4s;
+}
+.skillsContainer .backend.withinView .chipsContainer .chip:nth-child(2){
+    animation: opacity0 0.4s, popLeft 0.4s 0.4s;
+}
+.skillsContainer .backend.withinView .chipsContainer .chip:nth-child(3){
+    animation: opacity0 0.8s, popRight 0.4s 0.8s;
+}
+.skillsContainer .backend.withinView .chipsContainer .chip:nth-child(4){
+    animation: opacity0 1.2s, popLeft 0.4s 1.2s;
+}

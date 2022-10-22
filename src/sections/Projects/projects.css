@@ -1,0 +1,209 @@
+#projects {
+    position: relative;
+    max-width: 1400px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+#projects .titlePanel{
+    border: 5px solid black;
+    position: relative;
+    background-color: #F4FDBC;
+    height: 165px;
+    margin: 20px;
+    margin-bottom: 10px;
+}
+#projects .titlePanel .textBoxContainer{
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 20px;
+}
+/* Text Box Lines */
+#projects .titlePanel .textBoxContainer::after{
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+}
+#projects .titlePanel .textBoxContainer::before{
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+}
+
+
+#projects .projectsTitle{
+    position: absolute;
+    top: -17px;
+    left: 70px;
+    pointer-events: none;
+}
+
+#projects .projectsTitle .starsPlaceHolder{
+    opacity: 0;
+    width: 360px;
+}
+#projects .projectsTitle .stars{
+    position: absolute;
+    width: 360px;
+    top: -55px;
+    left: -15px;
+}
+#projects .projectsTitle .projectBoom{
+    position: absolute;
+    width: 275px;
+    top: -15px;
+    left: 30px;
+}
+#projects .projectsTitle .projectText{
+    position: absolute;
+    width: 390px;
+    top: 0;
+    left: 0px;
+}
+
+#projects .projectsContainer{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1.3fr 0.9fr;
+    grid-template-rows: 360px 90px 290px 230px;
+    margin: 20px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+#projects .filler {
+    grid-area: 2 / 2;
+    border: 5px solid black;
+    background-color: #B6CBFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#projects .filler h2{
+    font-size: 38px;
+    letter-spacing: 2px;
+    color: #FCEECE;
+    text-shadow: -1.5px 1.5px black, 1.5px 1.5px black, 1.5px -1.5px black, -1.5px -1.5px black, 3px 5px #377B99;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 990px) {
+    #projects .filler {
+        display: none;
+    }
+    #projects .projectsContainer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 360px 500px 230px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #projects .projectsContainer{
+        grid-template-rows: 300px 500px 230px;
+    }
+}
+@media screen and (max-width: 725px) {
+    #projects {
+        padding-bottom: 300px;
+    }
+    #projects .projectsTitle{
+        top: -7px;
+        left: 20px;
+    }
+    #projects .projectsTitle .starsPlaceHolder{
+        width: 300px;
+    }
+    #projects .projectsTitle .stars{
+        width: 300px;
+    }
+    #projects .projectsTitle .projectBoom{
+        width: 230px;
+    }
+    #projects .projectsTitle .projectText{
+        width: 325px;
+    }
+
+    #projects .projectsContainer{
+        margin: 10px;
+    }
+
+    #projects .titlePanel{
+        height: 145px;
+        margin: 10px;
+    }
+    #projects .titlePanel .textBoxContainer{
+        margin-right: 10px;
+    }
+    /* Text Box Lines */
+    #projects .titlePanel .textBoxContainer::after{
+        width: 50px;
+        bottom: -1px;
+    }
+    #projects .titlePanel .textBoxContainer::before{
+        width: 20px;
+        bottom: -5px;
+    }
+    #projects .projectsContainer{
+        grid-template-rows: 250px 500px 230px;
+    }
+}
+@media screen and (max-width: 550px) {
+    #projects .projectsContainer{
+        grid-template-rows: 250px 400px 230px;
+    }
+}
+
+/* Animation */
+@keyframes scale0 {
+    from{scale: 0;}
+    to{scale: 0;}
+}
+@keyframes overPop {
+    0%{scale: 0;}
+    80%{scale: 1.3;}
+    100%{scale: 1;}
+}
+@keyframes simplePop {
+    0%{scale: 0;}
+    100%{scale: 1;}
+}
+@keyframes swayRotational {
+    0%{
+        scale: 1;
+        transform: rotate(0deg);
+    }
+    25%{
+        scale: .99;
+        transform: rotate(1.5deg);
+    }
+    50%{
+        scale: 1;
+        transform: rotate(0deg);
+    }
+    75%{
+        scale: .98;
+        transform: rotate(-1.5deg);
+    }
+    100%{
+        scale: 1;
+        transform: rotate(0deg);
+    }
+}
+
+#projects .projectsTitle.withinView .projectBoom{
+    animation: overPop .8s forwards;
+}
+#projects .projectsTitle.withinView .projectText{
+    animation: scale0 0.3s, overPop .8s 0.3s forwards;
+}
+#projects .projectsTitle.withinView .stars{
+    animation: scale0 0.8s, simplePop 1s 0.8s ease-out, swayRotational 10s 1.8s linear infinite;
+}

@@ -1,0 +1,306 @@
+.landingPages {
+    position: relative;
+    grid-area: 3 / 2 / span 1 / span 2;
+    background-color: #235368;
+    border: 5px solid black;
+}
+
+.landingPages .dots {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+
+.landingPages > .dots {
+    opacity: 0.07;
+    z-index: 1;
+}
+
+.landingPages h2 {
+    position: absolute;
+    left: 60%;
+    top: 20px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: #FCEECE;
+    text-shadow: -1px 1px black, 1px 1px black, 1px -1px black, -1px -1px black, 3px 5px #377B99;
+    z-index: 2;
+}
+
+.landingPages .cardsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+.landingPages .card {
+    position: relative;
+    border: 3px solid black;
+    background-color: #CEDCFF;
+    height: 370px;
+    width: 175px;
+    z-index: 2;
+    cursor: pointer;
+}
+.landingPages .card .dots {
+    z-index: 1;
+}
+.landingPages .clipboard .dots{
+    transform: rotate(180deg);
+}
+.landingPages .crowdfund .dots{
+    transform: rotate(180deg);
+}
+
+
+.landingPages .card h3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 2;
+    font-size: 30px;
+    color: #F8E4B7;
+    letter-spacing: 2px;
+    text-shadow: -1.5px 1.5px black, 1.5px 1.5px black, 1.5px -1.5px black, -1.5px -1.5px black, -5px 5px #377B99;
+}
+.landingPages .card .container .bigShadow {
+    position: absolute;
+    transform: rotate(-45deg);
+    z-index: 1;
+    font-size: 100px;
+    color: #A5B0CC;
+    letter-spacing: 4px;
+    opacity: .3;
+}
+
+.landingPages .card > h1{
+    z-index: 2;
+    position: absolute;
+    bottom: -35px;
+    left: -5px;
+    font-size: 90px;
+    font-weight: 900;
+    color: #F8E4B7;
+    text-shadow: -2px 2px black, 2px 2px black, 2px -2px black, -2px -2px black, 6px 6px #235368;
+}
+.landingPages .card .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.landingPages .easybank {
+    margin-top: 50px;
+}
+.landingPages .easybank .bigShadow.top{
+    top: -50px;
+    left: -50px;
+}
+.landingPages .easybank .bigShadow.bottom{
+    bottom: -50px;
+    left: -150px;
+}
+
+.landingPages .clipboard {
+    margin-top: 80px;
+}
+.landingPages .clipboard .bigShadow.top{
+    top: -50px;
+    left: -50px;
+}
+.landingPages .clipboard .bigShadow.bottom{
+    bottom: -50px;
+    left: -150px;
+}
+
+.landingPages .fylo {
+    margin-top: 110px;
+}
+.landingPages .fylo .bigShadow.top{
+    top: 0px;
+    left: 0px;
+}
+.landingPages .fylo .bigShadow.bottom{
+    bottom: 10px;
+    left: 20px;
+}
+
+.landingPages .crowdfund {
+    margin-top: 140px;
+} 
+.landingPages .crowdfund .bigShadow.top{
+    top: -60px;
+    left: -60px;
+}
+.landingPages .crowdfund .bigShadow.bottom{
+    bottom: -60px;
+    left: -180px;
+}
+
+
+
+
+
+/* Responsiveness */
+@media screen and (max-width: 1260px) {
+    .landingPages h2 {
+        left: 55%;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .landingPages h2 {
+        left: 50%;
+    }
+    .landingPages .card {
+        height: 350px;
+        width: 150px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .landingPages h2 {
+        left: 45%;
+    }
+    .landingPages .card {
+        height: 350px;
+        width: 150px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .landingPages h2 {
+        left: 60%;
+    }
+    .landingPages .card {
+        height: 370px;
+        width: 175px;
+    }
+    .landingPages {
+        grid-area: 3 / 1 / span 1 / span 2;
+    }
+}
+@media screen and (max-width: 875px) {
+    .landingPages h2 {
+        left: 55%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .landingPages h2 {
+        left: 50%;
+    }
+    .landingPages .card {
+        height: 350px;
+        width: 150px;
+    }
+}
+@media screen and (max-width: 690px) {
+    .landingPages h2 {
+        left: 45%;
+    }
+    .landingPages .card {
+        height: 325px;
+        width: 125px;
+    }
+}
+@media screen and (max-width: 690px) {
+    .landingPages h2{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 590px) {
+    .landingPages h2{
+        font-size: 40px;
+    }
+    .landingPages .card {
+        height: 300px;
+        width: 100px;
+    }
+    .landingPages .card h3 {
+        font-size: 25px;    
+    }
+    .landingPages .card .container .bigShadow {
+        font-size: 80px;
+    }
+    .landingPages .card > h1{
+        bottom: -35px;
+        left: -5px;
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 590px) {
+    .landingPages h2{
+        left: 35%;
+    }
+}
+
+/* Animation */
+.landingPages .card{
+    transition: 0.5s;
+}
+.landingPages .card:hover {
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+.landingPages .card .title{
+    transition: 0.5s;
+}
+.landingPages .card:hover .title{
+    margin-top: -10px;
+    transition: 0.5s;
+    text-shadow: -1.5px 1.5px black, 1.5px 1.5px black, 1.5px -1.5px black, -1.5px -1.5px black, -15px 15px 2px #B2C6E7;
+}
+.landingPages .card > h1{
+    transition: 0.5s;
+}
+.landingPages .card:hover > h1{
+    transition: 0.5s;
+    transform: translate(-5px, -5px);
+    text-shadow: -2px 2px black, 2px 2px black, 2px -2px black, -2px -2px black, 10px 10px 2px #6A8CA7;
+}
+
+@keyframes strafeTop1 {
+    0%{transform: translate(0px, 0px) rotate(-45d -2px 2px black, 2px 2px black, 2px -2px black, -2px -2px black,eg);}
+    50%{transform: translate(-140px, 140px) rotate(-45deg);}
+    100%{transform: translate(0px, 0px) rotate(-45deg);}
+}
+@keyframes strafeBottom1 {
+    0%{transform: translate(0px, 0px) rotate(-45deg);}
+    50%{transform: translate(140px, -140px) rotate(-45deg);}
+    100%{transform: translate(0px, 0px) rotate(-45deg);}
+}
+.landingPages .easybank:hover .bigShadow.top {
+    animation: strafeTop1 30s infinite linear;
+}
+.landingPages .easybank:hover .bigShadow.bottom {
+    animation: strafeBottom1 30s infinite linear;
+}
+.landingPages .clipboard:hover .bigShadow.top {
+    animation: strafeTop1 30s infinite linear;
+}
+.landingPages .clipboard:hover .bigShadow.bottom {
+    animation: strafeBottom1 30s infinite linear;
+}
+.landingPages .crowdfund:hover .bigShadow.top {
+    animation: strafeTop1 30s infinite linear;
+}
+.landingPages .crowdfund:hover .bigShadow.bottom {
+    animation: strafeBottom1 30s infinite linear;
+}
+@keyframes strafeTop2 {
+    0%{transform: translate(0px, 0px) rotate(-45deg);}
+    50%{transform: translate(-40px, 40px) rotate(-45deg);}
+    100%{transform: translate(0px, 0px) rotate(-45deg);}
+}
+@keyframes strafeBottom2 {
+    0%{transform: translate(0px, 0px) rotate(-45deg);}
+    50%{transform: translate(40px, -40px) rotate(-45deg);}
+    100%{transform: translate(0px, 0px) rotate(-45deg);}
+}
+.landingPages .fylo:hover .bigShadow.top {
+    animation: strafeTop2 15s infinite linear;
+}
+.landingPages .fylo:hover .bigShadow.bottom {
+    animation: strafeBottom2 15s infinite linear;
+}
