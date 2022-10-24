@@ -168,7 +168,7 @@
         top: 3%;
     }
     .introduction .banBoomContainer .banBoomPlaceHolder{
-        width: 300px;
+        width: 400px;
     }
     .introduction .fullStackDev{
         top: 53%;
@@ -186,7 +186,11 @@
         width: 140px;
     }
 }
-
+@media screen and (max-width: 500px) {
+    .introduction .banBoomContainer .banBoomPlaceHolder{
+        width: 350px;
+    }
+}
 
 
 /* Animation */

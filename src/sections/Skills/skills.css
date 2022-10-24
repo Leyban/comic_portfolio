@@ -3,32 +3,32 @@
     justify-content: flex-end;
     max-width: 1600px;
     margin: 30px 0px 60px 0;
-    scale: 1.2;
+    transform: scale(1.2);
     box-sizing: border-box;
 }
 
 @media screen and (max-width: 1780px) {
     .skillsContainer{
-        scale: 1.2;
+        transform: scale(1.2);
         max-width: calc(88vw);
     }
 }
 @media screen and (max-width: 1390px) {
     .skillsContainer{
-        scale: 1.1;
+        transform: scale(1.1);
         max-width: calc(92vw);
     }
 }
 @media screen and (max-width: 1290px) {
     .skillsContainer{
-        scale: 1;
+        transform: scale(1);
         max-width: 100%;
         padding: 0 20px;
     }
 }
 @media screen and (max-width: 1170px) {
     .skillsContainer{
-        scale: 1.2;
+        transform: scale(1.2);
         padding: 0 20px;
         flex-flow: column;
         margin: 20px auto 70px;
@@ -54,44 +54,50 @@
 }
 @media screen and (max-width: 700px) {
     .skillsContainer{
-        scale: 1.1;
+        transform: scale(1.1);
         max-width: 100%;
         margin: 0px 0px 40px 0;
     }
 }
 @media screen and (max-width: 650px) {
     .skillsContainer{
-        scale: 1;
+        transform: scale(1);
         margin: -20px 0px 20px 0;
     }
 }
 @media screen and (max-width: 600px) {
     .skillsContainer{
-        scale: .95;
+        transform: scale(.95);
         margin: -40px 0px 10px 0;
     }
 }
 @media screen and (max-width: 550px) {
     .skillsContainer{
-        scale: .85;
+        transform: scale(.85);
         margin: -40px 0px 10px 0;
     }
 }
 @media screen and (max-width: 500px) {
     .skillsContainer{
-        scale: .8;
+        transform: scale(.8);
         margin: -80px 0px -40px 0;
     }
 }
 @media screen and (max-width: 450px) {
     .skillsContainer{
-        scale: .75;
+        transform: scale(.75);
         margin: -100px 0px -50px 0;
+    }
+}
+@media screen and (max-width: 440px) {
+    .skillsContainer{
+        transform: scale(.68);
+        margin: -150px 0px -100px 0;
     }
 }
 @media screen and (max-width: 400px) {
     .skillsContainer{
-        scale: .60;
+        transform: scale(.6);
         margin: -150px 0px -100px 0;
     }
 }
