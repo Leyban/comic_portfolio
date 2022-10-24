@@ -160,40 +160,117 @@
         grid-template-rows: 250px 400px 230px;
     }
 }
+@media screen and (max-width: 500px) {
+    #projects .projectsTitle{
+        top: -7px;
+        left: 0px;
+    }
+    #projects .titlePanel{
+        height: 118px;
+        margin: 10px;
+    }
+    #projects .projectsTitle .starsPlaceHolder{
+        width: 250px;
+    }
+    #projects .projectsTitle .stars{
+        width: 250px;
+        top: -40px;
+        left: 3px;
+    }
+    #projects .projectsTitle .projectBoom{
+        width: 200px;
+    }
+    #projects .projectsTitle .projectText{
+        width: 250px;        
+        top: 10px;
+        left: 20px;
+    }
+    #projects .titlePanel .textBox p.comicNeue{
+        font-size: 12px !important;
+    }
+    #projects .projectsContainer{
+        grid-template-rows: 180px 380px 230px;
+    }
+}
+@media screen and (max-width: 425px) {
+    #projects {
+        padding-bottom: 250px;
+    }
+    #projects .projectsTitle{
+        top: 2px;
+        left: 0px;
+    }
+    #projects .titlePanel{
+        height: 85px;
+        margin: 10px;
+    }
+    #projects .projectsTitle .starsPlaceHolder{
+        width: 150px;
+    }
+    #projects .projectsTitle .stars{
+        width: 150px;
+        top: -20px;
+        left: 13px;
+    }
+    #projects .projectsTitle .projectBoom{
+        width: 120px;
+        top: -7px;
+    }
+    #projects .projectsTitle .projectText{
+        width: 140px;        
+        top: 10px;
+        left: 30px;
+    }
+    #projects .titlePanel .textBoxContainer{
+        left: 50%;
+    }
+    #projects .titlePanel .textBox p.comicNeue{
+        padding: 15px !important;
+    }
+    #projects .projectsContainer{
+        grid-template-rows: 140px 350px 230px;
+    }
+}
+@media screen and (max-width: 425px) {
+    #projects .projectsContainer{
+        grid-template-rows: 140px 325px 230px;
+    }
+}
+
 
 /* Animation */
 @keyframes scale0 {
-    from{scale: 0;}
-    to{scale: 0;}
+    from{transform: scale(0)}
+    to{transform: scale(0)}
 }
 @keyframes overPop {
-    0%{scale: 0;}
-    80%{scale: 1.3;}
-    100%{scale: 1;}
+    0%{transform: scale(0)}
+    80%{transform: scale(1.3)}
+    100%{transform: scale(1)}
 }
 @keyframes simplePop {
-    0%{scale: 0;}
-    100%{scale: 1;}
+    0%{transform: scale(0)}
+    100%{transform: scale(1)}
 }
 @keyframes swayRotational {
     0%{
-        scale: 1;
+        transform: scale(1);
         transform: rotate(0deg);
     }
     25%{
-        scale: .99;
+        transform: scale(0.99);
         transform: rotate(1.5deg);
     }
     50%{
-        scale: 1;
+        transform: scale(1);
         transform: rotate(0deg);
     }
     75%{
-        scale: .98;
+        transform: scale(0.98);
         transform: rotate(-1.5deg);
     }
     100%{
-        scale: 1;
+        transform: scale(1);
         transform: rotate(0deg);
     }
 }

@@ -148,31 +148,23 @@
 /* Responsiveness */
 @media screen and (max-width: 1260px) {
     .landingPages h2 {
-        left: 55%;
+        left: auto;
+        right: 10px;
     }
 }
 @media screen and (max-width: 1150px) {
-    .landingPages h2 {
-        left: 50%;
-    }
     .landingPages .card {
         height: 350px;
         width: 150px;
     }
 }
 @media screen and (max-width: 1000px) {
-    .landingPages h2 {
-        left: 45%;
-    }
     .landingPages .card {
         height: 350px;
         width: 150px;
     }
 }
 @media screen and (max-width: 990px) {
-    .landingPages h2 {
-        left: 60%;
-    }
     .landingPages .card {
         height: 370px;
         width: 175px;
@@ -181,24 +173,13 @@
         grid-area: 3 / 1 / span 1 / span 2;
     }
 }
-@media screen and (max-width: 875px) {
-    .landingPages h2 {
-        left: 55%;
-    }
-}
 @media screen and (max-width: 800px) {
-    .landingPages h2 {
-        left: 50%;
-    }
     .landingPages .card {
         height: 350px;
         width: 150px;
     }
 }
 @media screen and (max-width: 690px) {
-    .landingPages h2 {
-        left: 45%;
-    }
     .landingPages .card {
         height: 325px;
         width: 125px;
@@ -229,9 +210,58 @@
         font-size: 70px;
     }
 }
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 500px) {
+    .landingPages .card {
+        height: 300px;
+        width: 90px;
+    }
+    .landingPages .card h3 {
+        font-size: 22px; 
+    }
+    .landingPages .card .container .bigShadow {
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 455px) {
+    .landingPages .card {
+        height: 300px;
+        width: 80px;
+    }
+    .landingPages .card h3 {
+        font-size: 18px; 
+    }
+    .landingPages .card .container .bigShadow {
+        font-size: 80px;
+    }
+    .landingPages .fylo .bigShadow.top{
+        top: -10px;
+        left: -10px;
+    }
+    .landingPages .fylo .bigShadow.bottom{
+        bottom: 30px;
+        left: 10px;
+    }
+    .landingPages .card > h1{
+        bottom: -35px;
+        left: -5px;
+        font-size: 65px;
+    }
+}
+@media screen and (max-width: 395px) {
     .landingPages h2{
-        left: 35%;
+        font-size: 33px;
+    }
+    .landingPages .card {
+        height: 280px;
+        width: 75px;
+    }
+    .landingPages .card h3 {
+        font-size: 15px; 
+    }
+    .landingPages .card > h1{
+        bottom: -35px;
+        left: -5px;
+        font-size: 60px;
     }
 }
 

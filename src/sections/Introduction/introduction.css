@@ -1,6 +1,6 @@
 .introduction {
     position: relative;
-    width: calc(100vw - 20px);
+    width: auto;
     height: calc(100vh - 20px);
     padding: 20px;
     box-sizing: border-box;
@@ -88,7 +88,28 @@
 }
 @media screen and (max-width: 720px) {
     .introduction{
+        width: auto;
         padding: 10px;
+    }
+}
+@media screen and (max-height: 700px) {
+    .introduction .banBoomContainer .banBoomPlaceHolder{
+        width: 520px;
+    }
+    .introduction .fullStackDev{
+        top: 65%;
+        left: 50%;
+        width: 200px;
+    }
+    .introduction .plane{
+        top: 78%;
+        left: 72%;
+        width: 190px;
+    }
+    .introduction .bird{
+        top: 82%;
+        left: 27%;
+        width: 200px;
     }
 }
 @media screen and (max-width: 660px) {
@@ -142,7 +163,29 @@
         width: 180px;
     }
 }
-
+@media screen and (max-width: 500px) {
+    .introduction .banBoomContainer{
+        top: 3%;
+    }
+    .introduction .banBoomContainer .banBoomPlaceHolder{
+        width: 300px;
+    }
+    .introduction .fullStackDev{
+        top: 53%;
+        left: 48%;
+        width: 140px;
+    }
+    .introduction .plane{
+        top: 69%;
+        left: 68%;
+        width: 140px;
+    }
+    .introduction .bird{
+        top: 80%;
+        left: 30%;
+        width: 140px;
+    }
+}
 
 
 
@@ -158,13 +201,13 @@
 
 /* ban boom */
 @keyframes scale0 {
-    from{scale: 0;}
-    to{scale: 0;}
+    from{transform: scale(0)}
+    to{transform: scale(0)}
 }
 @keyframes popupBanBoom {
-    0%{scale: 0;}
-    80%{scale: 1.2;}
-    100%{scale: 1;}
+    0%{transform: scale(0)}
+    80%{transform: scale(1.2)}
+    100%{transform: scale(1)}
 }
 @keyframes hover15 {
     0%{margin-top: 0;}
@@ -185,25 +228,21 @@
 @keyframes twistyPopupCW {
     0%{
         opacity: 0;
-        scale: 0;
-        transform: translate(-50%, -50%) rotate(-180deg);
+        transform: translate(-50%, -50%) rotate(-180deg) scale(0);
     }
     100%{
         opacity: 1;
-        scale: 1;
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg) scale(1);
     }
 }
 @keyframes twistyPopupCCW {
     0%{
         opacity: 0;
-        scale: 0;
-        transform: translate(-50%, -50%) rotate(180deg);
+        transform: translate(-50%, -50%) rotate(180deg) scale(0);
     }
     100%{
         opacity: 1;
-        scale: 1;
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg) scale(1);
     }
 }
 .introduction.withinView .fullStackDev{

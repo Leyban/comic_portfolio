@@ -73,7 +73,42 @@
         font-size: 70px;
     }
 }
-
+@media screen and (max-width: 500px) {
+    .sideQuest .title{
+        bottom: 30px;
+    }
+    .sideQuest .title span{
+        font-size: 50px;
+    }
+    .sideQuest .bigShadow{
+        font-size: 100px;
+    }
+    .sideQuest .dissectPad{
+        width: 110px;
+    }
+}
+@media screen and (max-width: 435px) {
+    .sideQuest .title span{
+        font-size: 50px;
+    }
+    .sideQuest .bigShadow{
+        font-size: 80px;
+    }
+    .sideQuest .dissectPad{
+        width: 110px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .sideQuest .title span{
+        font-size: 40px;
+    }
+    .sideQuest .bigShadow{
+        font-size: 80px;
+    }
+    .sideQuest .dissectPad{
+        width: 80px;
+    }
+}
 
 /* Animation */
 @keyframes strafe {

@@ -77,3 +77,21 @@
         margin: -40px 0px 10px 0;
     }
 }
+@media screen and (max-width: 500px) {
+    .skillsContainer{
+        scale: .8;
+        margin: -80px 0px -40px 0;
+    }
+}
+@media screen and (max-width: 450px) {
+    .skillsContainer{
+        scale: .75;
+        margin: -100px 0px -50px 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .skillsContainer{
+        scale: .60;
+        margin: -150px 0px -100px 0;
+    }
+}
