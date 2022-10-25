@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/comic_portfolio/static/css/main.ac6b63f2.css",
-    "main.js": "/comic_portfolio/static/js/main.bd230417.js",
+    "main.js": "/comic_portfolio/static/js/main.0d1d5f3c.js",
     "static/media/introBg.png": "/comic_portfolio/static/media/introBg.372870f18888522d4a44.png",
     "static/media/Dots.png": "/comic_portfolio/static/media/Dots.6a41c4613b767ae323f3.png",
     "static/media/Gears.png": "/comic_portfolio/static/media/Gears.d629c26ca5db88ec6a84.png",
@@ -22,10 +22,10 @@
     "static/media/Left_pointy.svg": "/comic_portfolio/static/media/Left_pointy.ee49d2415ecc4ea4e1fe3e26bf373c6c.svg",
     "static/media/Right_pointy.svg": "/comic_portfolio/static/media/Right_pointy.e34e569b5d29ac9a42d6c4caf34a12d5.svg",
     "main.ac6b63f2.css.map": "/comic_portfolio/static/css/main.ac6b63f2.css.map",
-    "main.bd230417.js.map": "/comic_portfolio/static/js/main.bd230417.js.map"
+    "main.0d1d5f3c.js.map": "/comic_portfolio/static/js/main.0d1d5f3c.js.map"
   },
   "entrypoints": [
     "static/css/main.ac6b63f2.css",
-    "static/js/main.bd230417.js"
+    "static/js/main.0d1d5f3c.js"
   ]
 }
