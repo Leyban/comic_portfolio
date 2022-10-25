@@ -6,6 +6,7 @@ import ProjectModal from './sections/ProjectModal';
 import Projects from './sections/Projects';
 import Skills from './sections/Skills';
 import { ProjectModalType } from './types';
+import logVisit from './utils/logger';
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false)
@@ -20,6 +21,10 @@ function App() {
   }
 
   const [appStyle, setAppStyle] = useState<React.CSSProperties>({overflow : 'unset'})
+
+  useEffect(()=>{
+    logVisit();
+  }, [])
 
   useEffect(() => {
     if (modalOpen) {
