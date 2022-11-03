@@ -74,6 +74,9 @@
     }
 }
 @media screen and (max-width: 500px) {
+    .sideQuest{
+        border: 3px solid black;
+    }
     .sideQuest .title{
         bottom: 30px;
     }

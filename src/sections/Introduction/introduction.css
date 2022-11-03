@@ -164,11 +164,14 @@
     }
 }
 @media screen and (max-width: 500px) {
+    .introduction .background{
+        border: 4px solid black;
+    }
     .introduction .banBoomContainer{
         top: 3%;
     }
     .introduction .banBoomContainer .banBoomPlaceHolder{
-        width: 400px;
+        width: 350px;
     }
     .introduction .fullStackDev{
         top: 53%;
@@ -184,11 +187,6 @@
         top: 80%;
         left: 30%;
         width: 140px;
-    }
-}
-@media screen and (max-width: 500px) {
-    .introduction .banBoomContainer .banBoomPlaceHolder{
-        width: 350px;
     }
 }
 

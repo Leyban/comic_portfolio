@@ -40,4 +40,5 @@ time, mark, audio, video {
 
 .App{
   -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
 }

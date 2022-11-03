@@ -53,6 +53,9 @@
     }
 }
 @media screen and (max-width: 500px) {
+    .tictactoe{
+        border: 3px solid black;
+    }
     .tictactoe .title h3{
         font-size: 35px;
     }

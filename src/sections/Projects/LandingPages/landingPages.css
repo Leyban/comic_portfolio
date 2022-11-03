@@ -211,7 +211,11 @@
     }
 }
 @media screen and (max-width: 500px) {
+    .landingPages{
+        border: 3px solid black;
+    }
     .landingPages .card {
+        border: 2px solid black;
         height: 300px;
         width: 90px;
     }

@@ -161,6 +161,7 @@
 }
 @media screen and (max-width: 500px) {
     #about .aboutPanel{
+        border: 4px solid black;
         height: 350px;
         font-size: 14px;
     }

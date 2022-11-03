@@ -10,6 +10,7 @@ interface ProjectModalProps {
 const ProjectModal: React.FC<ProjectModalProps> = ({closeModal, modalType}) => {
     return (  
         <div className="projectModal">
+            <div className="background" onClick={closeModal}></div>
             {modalType === "sideQuest" && <SideQuestModal closeModal={closeModal} />}
         </div>
     );

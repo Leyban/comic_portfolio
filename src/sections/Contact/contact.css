@@ -1,8 +1,10 @@
 #contact {
-    max-width: 1600px;
+    max-width: 1400px;
     padding: 20px;
     width: auto;
     position: relative;
+    margin: auto;
+    box-sizing: border-box;
 }
 #contact .contactMe {
     position: absolute;
@@ -215,5 +217,19 @@
     }
     #contact .contactForm .submitButton{
         grid-area: 3 / 1 ;
+    }
+}
+@media screen and (max-width: 500px) {
+    #contact .contactForm{
+        border: 4px solid black;
+    }
+    #contact .contactForm button{
+        border: 2px solid black;
+    }
+    #contact .contactForm .tinyInputs .inputContainer .border {
+        border: 2px solid black;
+    }
+    #contact .contactForm .bigInput .inputContainer .border {
+        border: 2px solid black;
     }
 }

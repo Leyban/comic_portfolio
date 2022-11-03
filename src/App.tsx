@@ -20,28 +20,12 @@ function App() {
     setModalType(null)
   }
 
-  const [appStyle, setAppStyle] = useState<React.CSSProperties>({overflow : 'unset'})
-
   useEffect(()=>{
     logVisit();
   }, [])
-
-  useEffect(() => {
-    if (modalOpen) {
-      setAppStyle({
-        width: '100vw',
-        height: '100vh',
-        boxSizing: 'border-box',
-        overflow : 'hidden'
-      })
-    } else {
-      setAppStyle({overflow : 'unset'})
-    } 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [modalOpen])
   
   return (
-    <div className="App" style={appStyle}>
+    <div className="App">
       <Introduction />
       <About />
       <Skills />

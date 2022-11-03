@@ -166,8 +166,12 @@
         left: 0px;
     }
     #projects .titlePanel{
+        border: 3px solid black;
         height: 118px;
         margin: 10px;
+    }
+    #projects .titlePanel .textBox{
+        border: 2px solid black !important;
     }
     #projects .projectsTitle .starsPlaceHolder{
         width: 250px;

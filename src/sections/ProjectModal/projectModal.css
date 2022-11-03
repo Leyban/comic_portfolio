@@ -4,7 +4,364 @@
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: white;
-    z-index: 11;
+    /* background-color: rgba(0, 0, 0, 0.87); */
+    z-index: 20;
     overflow: auto;
+}
+.projectModal .background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+.projectModal p.comicNeue{
+    font-weight: 600;
+    font-size: 20px !important;
+}
+
+.projectModal .modalStory{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin: auto;
+    width: 740px;
+    padding: 20px;
+    background-color: white;
+}
+
+/* title panel */
+.projectModal .title{
+    margin: 10px;
+    border: 5px solid black;
+    background-color: #9FE4D4;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+.projectModal .title .backButton{
+    border: none;
+    background-color: transparent;
+    position: relative;
+    pointer-events: none;
+    transition: 0.2s;
+}
+.projectModal .title .backButton:hover{
+    transition: 0.2s;
+    transform: translateX(10px);
+}
+.projectModal .title .backButton img{
+    cursor: pointer;
+    pointer-events: auto;
+}
+.projectModal .title .backButton p.comicNeue{
+    position: absolute;
+    top: 44%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.projectModal .title h1{
+    width: fit-content;
+    margin: auto;
+    font-size: 90px;
+    margin-top: 30px;
+}
+.projectModal .title .links{
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+}
+.projectModal .title .links a{
+    letter-spacing: 1px;
+    border: 3px solid black;
+    padding: 0;
+    overflow: hidden;
+    background-color: #D9D9D9;
+    margin: auto auto;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.projectModal .title .links a:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.projectModal .title .links a .whiteBG{
+    background-color: white;
+    transform: translate(-3px, -3px);
+    border-radius: inherit;
+}
+.projectModal .title .links a .whiteBG p.bangers{
+    color: #F8E4B7;
+    letter-spacing: 2px;
+    text-shadow: -1px 1px black, 1px 1px black, 1px -1px black, -1px -1px black;
+    font-size: 24px;
+    padding: 15px 30px;
+    transform: translate(5px, 3px);
+}
+
+/* Stack panel */
+.projectModal .stack{
+    margin: 10px;
+    border: 5px solid black;
+    background-color: #D6F5F1;
+    padding: 20px;
+}
+.projectModal .stack .pointyTextBox{
+    display: block !important;
+    width: fit-content;
+    margin-left: auto;
+}
+.projectModal .stack .pointyTextBox p.comicNeue{
+    width: 115px !important;
+    left: 55% !important;
+}
+.projectModal .stack .pointyTextBox img{
+    width: 200px;
+}
+.projectModal .stack .iconTray{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 80px;
+    border: 4px solid black;
+    background-color: white;
+    box-shadow: 5px 5px #9FE4D4;
+    height: 160px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 90px;
+    max-width: 1000px;
+}
+.projectModal .stack .iconTray .iconContainer{
+    position: relative;
+}
+.projectModal .stack .iconTray .iconContainer img{
+    height: 90px;
+}
+.projectModal .stack .iconTray .iconContainer img.shadow{
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    opacity: 0.2;
+}
+.projectModal .stack .iconTray .iconContainer .textBox{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.projectModal .stack .iconTray .iconContainer .textBox p{
+    padding: 15px !important;
+    transform: translate(-4px, -4px) !important;
+}
+.projectModal .stack .iconTray .iconContainer:nth-child(2n-1) .textBox{
+    top: -110px;
+}
+.projectModal .stack .iconTray .iconContainer:nth-child(2n) .textBox{
+    bottom: -110px;
+}
+
+.projectModal .features{
+    margin: 10px;
+    border: 5px solid black;
+    background-color: #9FE4D4;
+    padding: 20px;
+}
+.projectModal .features .pointyTextBox p.comicNeue{
+    left: 42% !important;
+}
+.projectModal .features .featuresTray{
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+.projectModal .features .featuresTray .whiteContainer{
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px #6FC3CB;
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+}
+.projectModal .features .featuresTray .whiteContainer img{
+    width: 100%;
+}
+.projectModal .features .featuresTray .whiteContainer p{
+    width: 70%;
+    margin: 20px auto;
+}
+.projectModal .features .featuresTray .whiteContainer h3.bangers{
+    position: absolute;
+    color: #F8E4B7;
+    letter-spacing: 2px;
+    text-shadow: -1.5px 1.5px black, 1.5px 1.5px black, 1.5px -1.5px black, -1.5px -1.5px black, 4px 4px #6FC3CB;
+    font-size: 30px;
+    top: -12px;
+}
+.projectModal .features .featuresTray .whiteContainer h3.bangers.left{
+    left: 20px;
+}
+.projectModal .features .featuresTray .whiteContainer h3.bangers.right{
+    right: 20px;
+}
+@media screen and (max-width: 1300px) {
+    .projectModal .stack .iconTray .iconContainer img{
+        height: 70px;
+    }
+    .projectModal .stack .iconTray{
+        border-radius: 65px;
+        height: 130px;
+        margin-top: 90px;
+        margin-bottom: 80px;
+    }
+    .projectModal .stack .iconTray .iconContainer img{
+        height: 70px;
+    }
+    .projectModal .stack .iconTray .iconContainer:nth-child(2n-1) .textBox{
+        top: -100px;
+    }
+    .projectModal .stack .iconTray .iconContainer:nth-child(2n) .textBox{
+        bottom: -100px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .projectModal .modalStory{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .projectModal .modalStory{
+        width: 500px;
+    }
+    .projectModal .title{
+        padding: 15px;
+    }
+    .projectModal .title h1{
+        margin-top: 20px;
+    }
+    .projectModal .title .links{
+        margin-top: 20px;
+    }
+    .projectModal p.comicNeue{
+        font-size: 16px !important;
+    }
+    .projectModal .stack .pointyTextBox img{
+        width: 180px;
+    }
+    .projectModal .stack .iconTray{
+        border-radius: 50px;
+        border: 3px solid black;
+        height: 100px;
+        margin-top: 80px;
+        margin-bottom: 70px;
+    }
+    .projectModal .stack .iconTray .textBox{
+        border: 2px solid black !important;
+    }
+    .projectModal .stack .iconTray .iconContainer img{
+        height: 50px;
+    }
+    .projectModal .stack .iconTray .iconContainer img.shadow{
+        left: 3px;
+        top: 3px;
+    }
+    .projectModal .stack .iconTray .iconContainer:nth-child(2n-1) .textBox{
+        top: -90px;
+    }
+    .projectModal .stack .iconTray .iconContainer:nth-child(2n) .textBox{
+        bottom: -90px;
+    }
+}
+@media screen and (max-width: 590px) {
+    .projectModal .modalStory{
+        width: 400px;
+        padding: 10px;
+    }
+    .projectModal p.comicNeue{
+        font-size: 16px !important;
+    }
+    .projectModal .title h1{
+        font-size: 70px;
+    }
+    .projectModal .title .links a{
+        border: 2px solid black;
+        border-radius: 25px;
+        transition: 0.2s;
+    }
+    .projectModal .title .links a .whiteBG p.bangers{
+        font-size: 20px;
+        padding: 13px 25px;
+    }
+    .projectModal .stack .pointyTextBox img{
+        width: 180px;
+    }
+    .projectModal .stack .iconTray{
+        border: 3px solid black;
+        border-radius: 30px;
+        height: 100px;
+        margin-top: 70px;
+        margin-bottom: 60px;
+    }
+    .projectModal .stack .iconTray .iconContainer .textBox{
+        border: 2px solid black !important;
+    }
+    .projectModal .stack .iconTray .iconContainer .textBox p{
+        padding: 12px !important;
+        transform: translate(-3px, -3px) !important;
+    }
+    .projectModal .stack .iconTray .iconContainer img{
+        height: 50px;
+    }
+    .projectModal .stack .iconTray .iconContainer:nth-child(2n-1) .textBox{
+        top: -80px;
+    }
+    .projectModal .stack .iconTray .iconContainer:nth-child(2n) .textBox{
+        bottom: -80px;
+    }
+    .projectModal .features .featuresTray .whiteContainer h3.bangers{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .projectModal .modalStory{
+        width: 350px;
+    }
+    .projectModal .title .backButton{
+        transform: scale(0.9) translate(-15px, -10px);
+    }
+    .projectModal .stack{
+        padding: 10px;
+    }
+    .projectModal .stack .pointyTextBox{
+        transform: scale(0.9) translate(15px, -5px);
+    }
+    .projectModal .stack .textBox{
+        transform: scale(0.85) translateX(-50%) !important;
+    }
+    .projectModal .features{
+        padding: 15px;
+    }
+    .projectModal .features .pointyTextBox{
+        transform: scale(0.9) translate(-10px, -5px);
+    }
+}
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* Animation */
+.projectModal{
+    animation: fadeIn 0.5s;
 }

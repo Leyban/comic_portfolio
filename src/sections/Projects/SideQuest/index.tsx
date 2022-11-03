@@ -10,7 +10,7 @@ interface SideQuestProps {
 
 const SideQuest: React.FC<SideQuestProps> = ({openModal}) => {
     return (  
-        <a href='https://leyban.github.io/Side-Quest-Frontend-V1/' target='_blank' className="sideQuest" rel="noreferrer">
+        <div onClick={() => openModal('sideQuest')} className="sideQuest">
             <span className="germaniaOne bigShadow" >Side Quest</span>
             <img src={dots} alt="dots" className='dots'/>
             <img src={dissectPad} alt="dissect tasks to a million pieces" className='dissectPad'/>
@@ -18,7 +18,7 @@ const SideQuest: React.FC<SideQuestProps> = ({openModal}) => {
                 <span className="germaniaOne actual" >Side Quest</span>
                 <span className="germaniaOne placeHolder" >Side Quest</span>
             </div>
-        </a>
+        </div>
     );
 }
  
