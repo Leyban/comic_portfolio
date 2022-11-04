@@ -96,7 +96,7 @@
     z-index: 10;
     width: 95%;
     padding: 10px 15px 0 15px;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Comic Neue', "Comic Sans MS", "Comic Sans", Calibri, 'Trebuchet MS', 'Courier New', Courier, monospace;
     font-weight: 600;
     font-size: 24px;
     color: '#333';
@@ -137,7 +137,7 @@
     box-sizing: border-box;
     margin-top: 15px;
     padding: 0px 15px 0 15px;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Comic Neue', "Comic Sans MS", "Comic Sans", Calibri, 'Trebuchet MS', 'Courier New', Courier, monospace;
     font-weight: 600;
     font-size: 24px;
     line-height: 35px;

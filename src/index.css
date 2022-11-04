@@ -19,23 +19,23 @@ time, mark, audio, video {
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:ital,wght@1,300;1,400;1,700&family=Germania+One&family=League+Spartan:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap');
 
 .bangers {
-  font-family: 'Bangers', Calibri;
+  font-family: 'Bangers', Impact, Calibri, sans-serif, 'Courier New', Courier, monospace;
 }
 
 .comicNeue {
-  font-family: 'Comic Neue', Calibri;
+  font-family: 'Comic Neue', "Comic Sans MS", "Comic Sans", Calibri, 'Trebuchet MS', 'Courier New', Courier, monospace;
 }
 
 .germaniaOne {
-  font-family: 'Germania One', Calibri;
+  font-family: 'Germania One', Impact, Calibri, sans-serif, 'Courier New', Courier, monospace;
 }
 
 .spartan {
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', Impact, sans-serif, 'Courier New', Courier, monospace;
 }
 
 .montserrat {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif, 'Courier New', Courier, monospace;
 }
 
 .App{
